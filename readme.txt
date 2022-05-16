@@ -1,11 +1,22 @@
          SPEECH BIRD v0.2 (May 2022)  |  (c) 2022 by Leeor Peled  |  speak2computer@gmail.com
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-See readme.txt for instructions and important notes.
+Ladies and gentlemen, meet Speech Bird: A speech recognition dialect which makes controlling your computer hands-free truly possible, fast, and fun. You can dictate texts, manipulate them and perform all keyboard/mouse actions with just your voice, and head movements.
 
-Ladies and gentlemen, meet Speech Bird. Speech Bird augments WSR with Command Streaming. No more ruffled feathers from waiting for WSR between commands - With Speech Bird, you can speak a few commands in one shot, or even mix dictation and commands. Speech Bird instantly chops your speeches to bite-size, and performs the commands one by one. Want to edit documents and control software hands-free? Speech Bird gives WSR wings with its nest-full of new commands and enhancements to WSR's built-ins.
-Ready to fly?
+Speech bird does this by:
 
+* Adding several hundred much-needed commands to Microsoft Windows Speech Recognition (WSR), so you can perform day-to-day office work such as writing, editing and formating documents, browsing the web, writing emails -- without WSR's native clunkiness, and with speed! 
+
+* Adding voice capabilities to several extremely handy apps (listed below), which do not have native voice control.
+
+* Integrating those separate, handy apps into one, unified voice control system. Speech Bird makes the underlying apps work together seamlessly. 
+
+* Augmenting WSR with Command Streaming. No more ruffled feathers from waiting for WSR between commands - With Speech Bird, you can speak a few commands in one shot, or even mix text-dictation and voice-commands within statements. Speech Bird instantly chops your speeches to bite-size, and performs the commands one by one.
+
+* Enabling direct keyboard keys.
+
+* And more! See dictionary.txt for complete list of possible commands. Note: Speech Bird ADDS to WSR, but all native WSR commands work normally with it -- except a few cases, for example saying "start" types the word rather than clicking the start button, because that is what most humans want their computer to do when they say "start".
+ 
 
 Preflight Checklist:
 ~~~~~~~~~~~~~~~~~~~~
