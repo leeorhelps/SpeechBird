@@ -1,5 +1,5 @@
 # SPEECHBIRD
-#### Video Demo:  <URL HERE>
+#### Video Demo:  https://youtu.be/zVLaNB9-deY
 #### Sources, Installation and Usage Manuals:  https://github.com/leeorhelps/SpeechBird/tree/main/0.4
 #### Description: SPEECHBIRD lets you do (nearly) everything on your computer, hands free.
 SPEECHBIRD brings extra functionality to Speech Recognition, so you can operate your computer using **your voice** instead of your hands (but with speed! (and accuracy! (and sanity!))).
