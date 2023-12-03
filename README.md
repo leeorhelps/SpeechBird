@@ -14,7 +14,7 @@ Existing voice support on Windows and OS X falls short when it comes to real wor
 
 * Command streaming, so you don’t need to wait for each command to execute before issuing the next one
 
-* Intuitive commands that are easy to remember and pronounce.
+* Intuitive commands that are easy to remember and pronounce, so you can focus on your work. 
 
 * Highly customizable. 
 
