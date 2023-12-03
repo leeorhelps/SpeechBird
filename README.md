@@ -20,4 +20,4 @@ Existing voice support on Windows and OS X falls short when it comes to real wor
 
 * Designed for everyday tasks: Using websites and filling forms. Writing emails, documents and spreadsheets. Controlling files and folders.
 
-* …and everything on MS-Windows. 
+* …and controlling everything on MS-Windows, hands-free. 
