@@ -4,8 +4,7 @@
 
 Requirements: MS-Windows. Your voice. That’s all!
 Optional: Head-movement and webcam for mouse pointer control.
-Demo: https://youtu.be/ejabFlxbZY4?si=2gjRy-WKW8uWqW31
-(Demo is 100% hands-free, even the mouse control) 
+Demo, including hands-free mouse: https://youtu.be/ejabFlxbZY4?si=2gjRy-WKW8uWqW31
 
 ## Why SpeechBird?
 Existing voice support on Windows and OS X falls short when it comes to real world computer use – frustrating, slow, inaccurate. Dictation works well - but users need more.
