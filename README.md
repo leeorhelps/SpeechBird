@@ -8,7 +8,8 @@ Demo: https://youtu.be/ejabFlxbZY4?si=2gjRy-WKW8uWqW31
 (Demo is 100% hands-free, even the mouse control) 
 
 ## Why SpeechBird?
-Existing voice support on Windows and OS X falls short when it comes to real world computer use – frustrating, slow, inaccurate. Dictation works well - but users need more. SpeechBirds provides:
+Existing voice support on Windows and OS X falls short when it comes to real world computer use – frustrating, slow, inaccurate. Dictation works well - but users need more.
+SpeechBird provides:
 * Fully hands-free mouse! SpeechBird integrates with Enable ViaCam + AHK, no additional hardware needed.
 
 * Command Streaming: Issue several commands at once, without having to wait in between.
