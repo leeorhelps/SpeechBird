@@ -22,21 +22,6 @@ p {
   line-height: 1.6;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
-table, th, td {
-  border: 1px solid #333;
-}
-
-th, td {
-  padding: 8px;
-  text-align: left;
-}
-
 /* Responsive layout for smartphones */
 @media (max-width: 767px) {
   .container {
