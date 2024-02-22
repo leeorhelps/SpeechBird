@@ -1,8 +1,13 @@
 /* main.css */
 
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(196, 178, 187);
+  /*background-color: rgb(196, 178, 187);*/
   color: #333;
   margin: 0;
   padding: 0;
