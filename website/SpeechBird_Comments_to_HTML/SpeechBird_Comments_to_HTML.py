@@ -131,6 +131,8 @@ def generate_html(commands):
     <!DOCTYPE html>
     <html>
     <head>
+        <link type="text/css" rel="stylesheet" href="stylesheets/main.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <style>
             body {{ margin: 0; padding: 0; }}
             #menu {{ position: fixed; top: 0; left: 0; width: 20%; height: 100vh; overflow-y: scroll; }}

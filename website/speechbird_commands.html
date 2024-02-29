@@ -2,6 +2,8 @@
     <!DOCTYPE html>
     <html>
     <head>
+        <link type="text/css" rel="stylesheet" href="stylesheets/main.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <style>
             body { margin: 0; padding: 0; }
             #menu { position: fixed; top: 0; left: 0; width: 20%; height: 100vh; overflow-y: scroll; }
@@ -11,33 +13,32 @@
     <body>
         <div id="menu">
             <ul>
-<li><a href="#1._Typing_Enhancements_">1. Typing Enhancements </a></li>
-<li><a href="#2._Mouse_Control_">2. Mouse Control </a></li>
-<li><a href="#3._Movement_&_Selection_">3. Movement & Selection </a></li>
-<li><a href="#4._Editing_&_Formatting_">4. Editing & Formatting </a></li>
-<li><a href="#5._Computer_Control_">5. Computer Control </a></li>
-<li><a href="#A1._Advanced:_Typing_Enhancements_">A1. Advanced: Typing Enhancements </a></li>
-<li><a href="#A2._Advanced:_Mouse_">A2. Advanced: Mouse </a></li>
-<li><a href="#A3._Advanced:_Movement_&_Selection__">A3. Advanced: Movement & Selection  </a></li>
-<li><a href="#A4._Advanced:_Editing_&_Formatting_">A4. Advanced: Editing & Formatting </a></li>
-<li><a href="#A5._Advanced:_Computer_Controls_">A5. Advanced: Computer Controls </a></li>
-<li><a href="#B1._Bird_Ears:_Commands_SpeechBird_Evades_or_Replaces_">B1. Bird Ears: Commands SpeechBird Evades or Replaces </a></li>
+<li><a href="#Typing_Enhancements_">Typing Enhancements </a></li>
+<li><a href="#Mouse_Control_">Mouse Control </a></li>
+<li><a href="#Movement_&_Selection_">Movement & Selection </a></li>
+<li><a href="#Editing_&_Formatting_">Editing & Formatting </a></li>
+<li><a href="#Computer_Control_">Computer Control </a></li>
+<li><a href="#Advanced:_Typing_Enhancements_">Advanced: Typing Enhancements </a></li>
+<li><a href="#Advanced:_Mouse_">Advanced: Mouse </a></li>
+<li><a href="#Advanced:_Movement_&_Selection__">Advanced: Movement & Selection  </a></li>
+<li><a href="#Advanced:_Editing_&_Formatting_">Advanced: Editing & Formatting </a></li>
+<li><a href="#Advanced:_Computer_Controls_">Advanced: Computer Controls </a></li>
+<li><a href="#Bird_Ears:_Commands_SpeechBird_Evades_or_Replaces_">Bird Ears: Commands SpeechBird Evades or Replaces </a></li>
 </ul>
 
         </div>
         <div id="content">
-            <h2 id="1._Typing_Enhancements_">1. Typing Enhancements </h2>
+            <h2 id="Typing_Enhancements_">Typing Enhancements </h2>
 <table class="table table-striped">
 <thead><tr><th>To Do...</th><th>You Say...</th><th>Details</th><th>Attributes</th></tr></thead>
 <tbody class="table-striped">
-<tr><td>Press Arrow Keys</td><td>"Up" / "Down" / "Left" / "Right"</td><td>"Streamable" attribute means you can say this command along with other commands in one breath, e.g:<br>"Up Right Up Space Right" <br>"Multiplier" attribute means you can say "3 Down" (instead of "Down" "Down" "Down")<br>Having both attributes, you can also say:<br>"3 Down 5 Right Space Right" in one breath, without having to pause your stream of commands.</td><td>Streamable, Multiplier</td></tr>
-<tr><td>Press Alphabet Keys</td><td>"a", "b", "c"...<br>"capital A", "capital B"...</td><td>SpeechBird defaults to typing when 1-3 letters are spoken. Even if text is selected, it will be overwritten (rather than bringing up the Alternates Panel for a correction).<br>To type longer sequences of letters, first say "Press", e.g:<br>"Press a b c captial d captial e..."</td><td>Streamable, Multiplier</td></tr>
-<tr><td>Add punctuation <strong>intelligently</strong>, i.e. with automatic spacing.</td><td>"Comma", "Period", "Question Mark", "Exclamation Mark", etc.</td><td>To override intelligent typing, first say "Press".</td><td>Streamable, Multiplier</td></tr>
-<tr><td></td><td></td><td></td><td></td></tr>
-<tr><td>Press number keys</td><td>Say "Numeral (numbers)", e.g:<br>"Numeral one two three".</td><td></td><td></td></tr>
+<tr><td>Press Arrow Keys</td><td>"Up" / "Down" / "Left" / "Right"</td><td>"Streamable" attribute means you can say this command along with other commands in one breath, e.g:<br>"Up Right Up Space Right" <br><br>"Multiplier" attribute means you can say "3 Down" (instead of "Down" "Down" "Down")<br><br>Yet Having both attributes, you can also say:<br>"3 Down 5 Right Space Right" in one breath, without having to pause your stream of commands.</td><td>Streamable, Multiplier</td></tr>
+<tr><td>Press Alphabet Keys</td><td>"a", "b", "c"...<br>"capital A", "capital B"...</td><td>SpeechBird defaults to typing when 1-3 letters are spoken. Even if text is selected, it will be overwritten (rather than bringing up the Alternates Panel for a correction).<br><br>To type longer sequences of letters, first say "Press", e.g:<br>"Press a b c captial d captial e..."</td><td>Streamable, Multiplier</td></tr>
+<tr><td>Add Punctuation <strong>intelligently</strong><br>(Auto spacing)</td><td>"Comma", "Period", "Question Mark", "Exclamation Mark", etc.</td><td>To override intelligent typing, first say "Press".</td><td>Streamable, Multiplier</td></tr>
+<tr><td>Press Number Keys</td><td>"Numeral (numbers)"</td><td>"Numeral one two three"</td><td>Streamable</td></tr>
 <tr><td>Press Enter</td><td>"Enter" or "New Line"</td><td>Saying "Enter" mid-dictation will result in the word typed; "New Line" mid-dictation will insert a new line. Both can be incorporated in command streams, with or without a multiplier (eg "3 Enter")</td><td>Streamable, Multiplier</td></tr>
 <tr><td>Press Space</td><td>"Space"</td><td></td><td>Streamable, Multiplier</td></tr>
-<tr><td>Press Backspace</td><td>"Back"</td><td>"Back" deletes last letter. "Backs" deletes last word. "N Backs" deletes last N Words. "Nth Backs" deletes Nth word back. "SBack" deletes word under mouse pointer. "N SBack" deletes last N words, starting from mouse pointer. Note: Commands that manipulate whole words can be triggered when pointer is anywhere on the word, no need to aim precisely.</td><td>Streamable, Selecting, Multiplier, Ordinal, Moused</td></tr>
+<tr><td>Press Backspace</td><td>"Back"</td><td>"Back" deletes last letter.<br><br>"Selecting" attribute means you can say "BackS" to select and delete last word.<br><br>"Multiplier" attribute means "N BackS" selects and deletes last N words.<br><br>"Ordinal" Attribute means "Nth BackS" selects and deletes Nth-previous word.<br><br>"Moused" Attribute means "SBack" clicks the mouse, then delets previous word. Effectively deletes word under mouse pointer (Think of Moused commands as telling SpeechBird: "This:" + Command).<br><br>Combining the above, saying "N SBack" clicks and deletes N-previous words, e.g:<br>"3 SBack" deletes 3 words, starting from mouse pointer.<br><br>Note: Commands that apply to all words such as "BackS", "DeleteS", "BoldS" can be spoken anywhere in a word (no need to aim precisely for a specific part of the word).</td><td>Streamable, Selecting, Multiplier, Ordinal, Moused</td></tr>
 <tr><td>Press Delete</td><td>"Delete"</td><td>"Delete" deletes next letter. "Deletes" deletes next word. "N Deletes" deletes next N Words (same as "N AfterS, Delete"). "Nth Deletes" deletes Nth word forward. "SDelete" deletes word under mouse pointer. "N SDelete" deletes next N words, starting from mouse pointer.</td><td>Streamable, Selecting, Multiplier, Ordinal, Moused</td></tr>
 <tr><td>Press Escape</td><td>"Cancel"</td><td>Small windows that pop on the screen can be closed with this command, whether they have a "cancel" button or not.</td><td>Streamable, Multiplier</td></tr>
 <tr><td>Move to next / previous form box or item</td><td>"Tab" / "Shiftab"</td><td>Also useful for indentation</td><td>Advanced, Streamable, Multiplier</td></tr>
@@ -49,12 +50,12 @@
 <tr><td>Open Dictation window for multiline or formatted text</td><td>"Dictate" or "Dictate <text>" or "Dictate Paste"</td><td>(Requires App: Outlook. Can be changed to rely on Word, or WordPad) Provides proper handling of formatting (bold, underline, fonts and sizes), as well as undo/redo, saving texts as drafts. Dictated text can be automatically inserted into other applications, even if they do not natively support voice dictation.</td><td></td></tr>
 <tr><td>Finish dictating</td><td>"Soff"</td><td>When dictation window is open, this command will close the dictation window and paste dictated text into the previous window, ("Soff" is Hebrew for "End"). The dictated text is saved, in case the user wants to refer back to it or in case anything goes wrong with the pasting.</td><td></td></tr>
 </tbody></table>
-<h2 id="2._Mouse_Control_">2. Mouse Control </h2>
+<h2 id="Mouse_Control_">Mouse Control </h2>
 <table class="table table-striped">
 <thead><tr><th>To Do...</th><th>You Say...</th><th>Details</th><th>Attributes</th></tr></thead>
 <tbody class="table-striped">
-<tr><td>Click</td><td>"Yep" (OR: "Click That")</td><td>"Yep" for regular left click. "Yep" is not Multiplier, but "Syep" is Multiplier: "SYep" selects word under mouse (Same as saying "Click that. Select previous word."). "N SYep" Eg: "3 SYep" selects 3 befores, starting at mouse pointer. Yeps" selects text and images from current typing position to mouse pointer (Shift + Click). Tip: If you starting saying "Yep" and realise you still need to move the mouse a little bit to the item you wish to click, you can slur the "Yiiiiiiep".</td><td>Streamable, Selecting, Multiplier, Moused</td></tr>
-<tr><td>Double Click</td><td>"Yeah" (OR: "Double Click That")</td><td>"Yeah" is not Multiplier, but the moused "SYeah" to select words is Multiplier. "N SYeah" eg "4 SYeah" clicks the mouse, goes to end of word and then select the last 4 words. This alternative to "SYep" works also in apps that are incompatible with Windows Speech Recognition. Tip: If you starting saying "Yep" and realise you still need to move the mouse a little bit to the item you wish to click, you can slur the "Yiiiiiieah".</td><td>Streamable, Selecting, Multiplier, Moused</td></tr>
+<tr><td>Click</td><td>"Yep" (OR: "Click That")</td><td>"Yep" for regular left click. "Yep" is not Multiplier, but "Syep" is Multiplier: "SYep" selects word under mouse (Same as saying "Click that. Select previous word."). "N SYep" Eg: "3 SYep" selects 3 befores, starting at mouse pointer. Yeps" selects text and images from current typing position to mouse pointer (Shift + Click). Tip: If you starting saying "Yep" and realise you still need to move the mouse a little bit to the item you wish to click, you can stretch the "Yiiiiiiep".</td><td>Streamable, Selecting, Multiplier, Moused</td></tr>
+<tr><td>Double Click</td><td>"Yeah" (OR: "Double Click That")</td><td>Tip: If you starting saying "Yeah" and realise you still need to move the mouse a little bit to the item you wish to doubleclick, you can stretch the "Yiiiiiieah".</td><td>Streamable, Selecting, Multiplier, Moused</td></tr>
 <tr><td>Right Click</td><td>"R Yep"</td><td></td><td>Streamable</td></tr>
 <tr><td>Drag and Drop</td><td>"Drag" to click and hold. "R Drag" to drag with right mouse button. "Drop" to release.</td><td></td><td></td></tr>
 <tr><td>Continuously Scroll Up / Down</td><td>"Scroll Up" / "Scroll Down"</td><td>To stop scrolling, say "Yep". To scroll just once, say "Big Scroll Up/Down" or "Small Scroll Up/Down" or a number, eg "3 Scroll Down".</td><td>Streamable</td></tr>
@@ -62,13 +63,13 @@
 <tr><td>Toggle ViaCam face tracking On / Off</td><td>"Mouse"</td><td>(Requires Optional App: Enable ViaCam) If ViaCam is not running, saying "Mouse" will launch it.</td><td>Streamable</td></tr>
 <tr><td>Click and toggle ViaCam off</td><td>"Yo"</td><td>(Requires Optional App: Enable ViaCam) Turns mouse face tracking off after click, can be used as a replacement for "Yep" If you find a mouse moving around all the time distracting.</td><td>Streamable</td></tr>
 </tbody></table>
-<h2 id="3._Movement_&_Selection_">3. Movement & Selection </h2>
+<h2 id="Movement_&_Selection_">Movement & Selection </h2>
 <table class="table table-striped">
 <thead><tr><th>To Do...</th><th>You Say...</th><th>Details</th><th>Attributes</th></tr></thead>
 <tbody class="table-striped">
 <tr><td></td><td></td><td></td><td>Advanced, Streamable, Selecting, Multiplier, Ordinal, Moused</td></tr>
 <tr><td>Press Up / Down / Left / Right</td><td>"Up" / "Down" / "Left" / "Right"</td><td>Streamable! Try saying "Up Up Right" in one stream - you don't have to stop speaking between streamable commands. These commands are also Selecting! Put the cursor in the middle of some text, then try saying "Ups" or "Lefts". They can handle Multipliers too! Try saying "2 Down" or "3 Rights". They can also handle ORDinlas, try saying "3rd Right" or "4th Left".</td><td>Streamable, Selecting, Multiplier, Ordinal</td></tr>
-<tr><td>Move forward or back by whole words</td><td>"After" or "Before"</td><td>Multiplier! "2 After" goes 2 words forward. Combine count and selection - try saying "3 Afters" to select three words. Ordinals! "4th Befores" selects 4th word back, "2nd Afters" selects the word after-next. If you select 3 next words, then decide you want more, just say "More Afters" to select one more word, on "N More Afters" to select N more words eg "3 More Afters". You can also say "Less Afters" to un-select a word, or "N Less Afters" to un-select N words. "More" works with Afters or Befores. In applications that do not natively support WSR dictation, SpeechBird will instead send Big Left(S) or Big Right(S), see below.</td><td>Streamable, Selecting, Multiplier, Ordinal</td></tr>
+<tr><td>Move forward or back by whole words</td><td>"After" or "Before"</td><td>Multiplier! "2 After" goes 2 words forward. Combine count and selection - try saying "3 Afters" to select three words. Ordinals! "4th Befores" selects 4th word back, "2nd Afters" selects the word after-next. If you select 3 next words, then decide you want more, just say "More Afters" to select one more word, on "N More Afters" to select N more words eg "3 More Afters". You can also say "Less Afters" to un-select a word, or "N Less Afters" to un-select N words. "More" works with Afters or Befores. In applications that do not natively support WSR dictation, SpeechBird will automatically use Big Left(S) or Big Right(S), see below. SYep = SBefore, and you can also SAfter.</td><td>Streamable, Selecting, Multiplier, Ordinal</td></tr>
 <tr><td>Alternate way to move forward or back by whole words (uses ctrl + arrow keys)</td><td>"Big Right" / "Big Left"</td><td>Useful in applications that are not compatible with Windows Speech Recognition text editing, such as Excel. Speaking of Excel, you can also "Big UppS" / "Big DownS" for ctrl-shift-up/down</td><td>Advanced, Streamable, Selecting, Multiplier</td></tr>
 <tr><td>Jump to (or select) Nth word of current sentence</td><td>"Nth Word"</td><td>Eg: "2nd Word" or "3rd Words"</td><td>Advanced, Streamable, Selecting, Ordinal</td></tr>
 <tr><td>Jump to start / end of line</td><td>"Home" / "End"</td><td>"HomeS" / "EndS" to select while moving</td><td>Streamable, Selecting</td></tr>
@@ -79,7 +80,7 @@
 <tr><td>Jump to Top / Bottom of document</td><td>"Top" / "Bottom"</td><td>"TopS" / "BottomS" to to select from current position to Top / Bottom</td><td>Streamable, Selecting</td></tr>
 <tr><td>Select All</td><td>"AllS"</td><td>"Sall"To select all txt in window under mouse pointer.</td><td>Advanced, Streamable, Selecting, Multiplier, Ordinal, Moused</td></tr>
 </tbody></table>
-<h2 id="4._Editing_&_Formatting_">4. Editing & Formatting </h2>
+<h2 id="Editing_&_Formatting_">Editing & Formatting </h2>
 <table class="table table-striped">
 <thead><tr><th>To Do...</th><th>You Say...</th><th>Details</th><th>Attributes</th></tr></thead>
 <tbody class="table-striped">
@@ -89,7 +90,7 @@
 <tr><td>Bold, Underline, Italic</td><td>"Bold", "Underline", "Italic"</td><td></td><td>Streamable, Selecting, Multiplier, Ordinal, Moused</td></tr>
 <tr><td>Toggle Bulletized List / Numbered List</td><td>"Bullet" / "Numbered List"</td><td>On its own, will affect current line. "SBullet" will affect line under mouse pointer. With multiplier, will affect N Lines, eg "3 BulletS"</td><td>Streamable, Multiplier, Moused</td></tr>
 </tbody></table>
-<h2 id="5._Computer_Control_">5. Computer Control </h2>
+<h2 id="Computer_Control_">Computer Control </h2>
 <table class="table table-striped">
 <thead><tr><th>To Do...</th><th>You Say...</th><th>Details</th><th>Attributes</th></tr></thead>
 <tbody class="table-striped">
@@ -144,7 +145,7 @@
 <tr><td>Find synonyms for selected text</td><td>"Synonym That"</td><td>Eg "Afters Synonym That" or select first, then say "Synonym That"</td><td></td></tr>
 <tr><td>Various MS Outlook commands are available</td><td>"inbox"</td><td>Since not all users use Outlook: To activate these features, rename and "Computer Control - Outlook.WSRMac.OFF" to "Computer Control - Outlook.WSRMac".</td><td>Advanced, Streamable, Selecting, Multiplier, Ordinal, Moused</td></tr>
 </tbody></table>
-<h2 id="A1._Advanced:_Typing_Enhancements_">A1. Advanced: Typing Enhancements </h2>
+<h2 id="Advanced:_Typing_Enhancements_">Advanced: Typing Enhancements </h2>
 <table class="table table-striped">
 <thead><tr><th>To Do...</th><th>You Say...</th><th>Details</th><th>Attributes</th></tr></thead>
 <tbody class="table-striped">
@@ -155,7 +156,7 @@
 <tr><td>Combine commands and text dictation in one breath</td><td>(Streamable Commands...) "Type (Text...)" OR: "Just Type (Text...)" OR: "Press (keys)" OR "N Types / Just Types / Presses..."</td><td>Eg. "2 Up 4 Right 3 Afters Type I'm dictating some text" to press Up twice, Right 4 times, select next 3 words and replace them wih "I'm dictating some text"</td><td>Streamable, Multiplier</td></tr>
 <tr><td>Foreign Language Integration (Eg. Hebrew Dictation Window, Hebrew Alphabet Typing)</td><td></td><td>Rename the included "Advanced - Foreign Language Integration - Hebrew.WSRMac.OFF" to "Advanced - Foreign Language Integration - Hebrew.WSRMac". Relies on Google Documents for foreign language dictation (requires Internet connection. Hebrew and several other languages work well!).</td><td></td></tr>
 </tbody></table>
-<h2 id="A2._Advanced:_Mouse_">A2. Advanced: Mouse </h2>
+<h2 id="Advanced:_Mouse_">Advanced: Mouse </h2>
 <table class="table table-striped">
 <thead><tr><th>To Do...</th><th>You Say...</th><th>Details</th><th>Attributes</th></tr></thead>
 <tbody class="table-striped">
@@ -177,7 +178,7 @@
 <tr><td>Clear mouse dots.</td><td>"Clear Dots"</td><td>(Requires App: Microsoft Power Toys) in case Mouse Highlighter is buggy and dots remain on the screen. Power Toys' Mouse Highlighter needs to be enabled, and using the default keyboard combination of Shift+Win+H.</td><td>Advanced</td></tr>
 <tr><td>Choose camera settings preset (eg preset brightness and shutter controls to get better response from ViaCam vs look more natural on Zoom calls)</td><td>"Cam [preset]" Eg "Cam Night" OR: "Cam Day"</td><td>(Requires App: Camooz. v2.1 recommended)</td><td>Advanced</td></tr>
 </tbody></table>
-<h2 id="A3._Advanced:_Movement_&_Selection__">A3. Advanced: Movement & Selection  </h2>
+<h2 id="Advanced:_Movement_&_Selection__">Advanced: Movement & Selection  </h2>
 <table class="table table-striped">
 <thead><tr><th>To Do...</th><th>You Say...</th><th>Details</th><th>Attributes</th></tr></thead>
 <tbody class="table-striped">
@@ -195,7 +196,7 @@
 <tr><td>Select to beginning of sentence</td><td>"Graph-topS"</td><td>(Like "TopS", but for "Graph"s)</td><td>Advanced, Streamable</td></tr>
 <tr><td>Select to beginning of sentence</td><td>"Graph-bottomS"</td><td>(Like "BottomS", but for "Graph"s)</td><td>Advanced, Streamable</td></tr>
 </tbody></table>
-<h2 id="A4._Advanced:_Editing_&_Formatting_">A4. Advanced: Editing & Formatting </h2>
+<h2 id="Advanced:_Editing_&_Formatting_">Advanced: Editing & Formatting </h2>
 <table class="table table-striped">
 <thead><tr><th>To Do...</th><th>You Say...</th><th>Details</th><th>Attributes</th></tr></thead>
 <tbody class="table-striped">
@@ -215,7 +216,7 @@
 <tr><td>Un-Capitalize selected text (or current word if none selected, or last dictated text if no movement since dictation)</td><td>"NoCap"</td><td>Same as "CapS" to select/apply to one or more words:  "NoCapS", "3 NoCapS", "2nd NoCapS", OR a specific word: OR one or more words under mouse pointer:  "SNoCap", "3 SNoCap"</td><td>Advanced, Selecting, Multiplier, Ordinal, Moused</td></tr>
 <tr><td>ALL-CAPS selected text (or current word if none selected, or last dictated text if no movement since dictation)</td><td>"AllCap"</td><td>Same as "CapS" to select/apply to one or more words: "AllCapS", "3 AllCapS", OR a specific word: "2nd AllCapS", OR one or more words under mouse pointer: "SAllCap", "3 SAllCap"</td><td>Advanced, Selecting, Multiplier, Ordinal, Moused</td></tr>
 </tbody></table>
-<h2 id="A5._Advanced:_Computer_Controls_">A5. Advanced: Computer Controls </h2>
+<h2 id="Advanced:_Computer_Controls_">Advanced: Computer Controls </h2>
 <table class="table table-striped">
 <thead><tr><th>To Do...</th><th>You Say...</th><th>Details</th><th>Attributes</th></tr></thead>
 <tbody class="table-striped">
@@ -244,7 +245,7 @@
 <tr><td>Write Speech Macros Easily in VS Code or Notepad</td><td>"Command", "Infoblock", "Braced (say what you want in braces)", "Braceted (say what you want double-braced)", "Shift", "Alt", "Control", "SendKeys", "Emulate", "Times", "Priority", "Appisinforeground", "Confirm"</td><td>These commands work as long as the filename contains .WSRMac</td><td>Advanced</td></tr>
 <tr><td></td><td></td><td></td><td>Advanced, Streamable, Selecting, Multiplier, Ordinal, Moused</td></tr>
 </tbody></table>
-<h2 id="B1._Bird_Ears:_Commands_SpeechBird_Evades_or_Replaces_">B1. Bird Ears: Commands SpeechBird Evades or Replaces </h2>
+<h2 id="Bird_Ears:_Commands_SpeechBird_Evades_or_Replaces_">Bird Ears: Commands SpeechBird Evades or Replaces </h2>
 <table class="table table-striped">
 <thead><tr><th>To Do...</th><th>You Say...</th><th>Details</th><th>Attributes</th></tr></thead>
 <tbody class="table-striped">
