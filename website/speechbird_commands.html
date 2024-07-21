@@ -17,7 +17,8 @@
 <li><a href="#Mouse_Control_">Mouse Control </a></li>
 <li><a href="#Movement_&_Selection_">Movement & Selection </a></li>
 <li><a href="#Editing_&_Formatting_">Editing & Formatting </a></li>
-<li><a href="#Computer_Control_">Computer Control </a></li>
+<li><a href="#Computer_Control:_Speech_Recognition_">Computer Control: Speech Recognition </a></li>
+<li><a href="#Computer_Control:_Windows_">Computer Control: Windows </a></li>
 <li><a href="#Advanced:_Typing_Enhancements_">Advanced: Typing Enhancements </a></li>
 <li><a href="#Advanced:_Mouse_">Advanced: Mouse </a></li>
 <li><a href="#Advanced:_Movement_&_Selection__">Advanced: Movement & Selection  </a></li>
@@ -89,49 +90,54 @@
 <tr><td>Bold, Underline, Italic</td><td>"Bold", "Underline", "Italic"</td><td></td><td>Streamable<br>Selecting<br>Multiplier<br>Ordinal<br>Moused</td></tr>
 <tr><td>Toggle Bulletized List / Numbered List</td><td>"Bullet" / "Numbered List"</td><td>On its own, will affect current line.<br>"SBullet" will affect line under mouse pointer.<br>With multiplier, will affect N Lines, eg "3 BulletS" to start at typing cursor's line, or "4 SBullet" to start at mouse pointer's line.</td><td>Streamable<br>Multiplier<br>Moused</td></tr>
 </tbody></table>
-<h2 id="Computer_Control_">Computer Control </h2>
+<h2 id="Computer_Control:_Speech_Recognition_">Computer Control: Speech Recognition </h2>
 <table class="table table-striped">
 <thead><tr><th>To Do...</th><th>You Say...</th><th>Details</th><th>Attributes</th></tr></thead>
 <tbody class="table-striped">
-<tr><td>Turn Speech Recognition off completely</td><td>"Speech Off"</td><td>After saying "Speech Off", you have to use mouse/keyboard to turn WSR on again. Saying "Start Listening" will not work.</td><td>Selecting<br>Multiplier<br>Ordinal<br>Moused</td></tr>
-<tr><td>Open Alternates Panel to correct selected text (or current word if none selected, or last dictated text if no movement since dictation)</td><td>"Nope" (OR "Correct that")</td><td>"NopeS" to force correction of last word even if just dictated several. "3 NopeS" to correct last 3 words. "4th NopeS" to correct 4th-previous word. "SNope" to correct word under mouse pointer, "5 SNope" to correct last 5 starting at mouse pointer.</td><td>Selecting<br>Multiplier<br>Ordinal<br>Moused</td></tr>
-<tr><td>Choose an alternate in the Alternates Panel</td><td>Its number</td><td>e.g. "One", "Five" (OR: "One OK", "Three OK")</td><td></td></tr>
-<tr><td>Add current word to Speech Dictionary</td><td>"Dictionary Adds"</td><td></td><td></td></tr>
-<tr><td>Add current word to dictation Speech Dictionary</td><td>"Dictionary Adds"</td><td></td><td></td></tr>
-<tr><td>Prevent dictation of this word at the Speech Dictionary</td><td>"Dictionary Prevents"</td><td>"SPrevent" to prevent the word under mouse pointer</td><td>Moused</td></tr>
-<tr><td>Open Speech Dictionary to Change Existing Words</td><td>"Dictionary Extra"</td><td>To select words and change how they sound or remove an entry from Speech Dictionary</td><td></td></tr>
-<tr><td>Ignore commands for 3 seconds</td><td>"Sheket Bevakasha"</td><td>Useful when you know some noise is coming, or you need to say a quick word to another person without triggering WSR.</td><td></td></tr>
+<tr><td>Turn Speech Recognition off completely</td><td>"Speech Off"</td><td>After saying "Speech Off", you have to use mouse/keyboard to turn WSR on again. Saying "Start Listening" will not work.</td><td></td></tr>
+<tr><td>Make corrections to dictated text</td><td>"Nope" (OR "Correct that")</td><td>Open Alternates Panel to correct one of the following:<br>If any text is seleced: Correct selected text<br>If most-recent utterance was a dictation of text: Correct that dictated text<br>Otherwise: Correct the word at cursor position<br>To correct only the last word (or last N words):<br>Say "NopeS" for just one word, or "3 NopeS" to correct last 3 words, etc.<br>To correct the Nth-previous word, say "Nth NopeS" (Example: For the 4th-previous word, say "4th Nopes")<br>To correct the word(s) under mouse pointer: "SNope" for 1 word, or several words, example: "5 SNope" to correct last 5 words starting at mouse pointer.</td><td>Selecting<br>Multiplier<br>Ordinal<br>Moused</td></tr>
+<tr><td>Choose an alternate from the options offered in the Alternates Panel</td><td>Its number, example "three"</td><td>You can also use the native WSR method: "three OK"</td><td></td></tr>
+<tr><td>Open Speech Dictionary</td><td>"Dictionary"</td><td>The Dictionary allows you to teach WSR new words, prevent certain words from being detected and improve WSR's ability to recognize a word by recording your own way of saying it.</td><td></td></tr>
+<tr><td>Add word at cursor position to Speech Dictionary</td><td>"Dictionary Adds"</td><td></td><td></td></tr>
+<tr><td>Prevent dictation of word at cursor position using the Speech Dictionary</td><td>"Dictionary Prevents"</td><td>"SPrevent" to prevent the word under mouse pointer</td><td>Moused</td></tr>
+<tr><td>Open Speech Dictionary and go directly into the section for teaching WSR your way of saying certain words, or deleting words you previously taught WSR.</td><td>"Dictionary Extra"</td><td></td><td></td></tr>
+<tr><td>Ignore speech for 3 seconds</td><td>"Sheket Bevakasha"</td><td>Useful when you expect some noise to occure, and want to pre-emptively prevent the noise from being interpreted by WSR. Example: noisy people walk by you, or you want to say a something short to another person, without triggering speech recognition.</td><td></td></tr>
+</tbody></table>
+<h2 id="Computer_Control:_Windows_">Computer Control: Windows </h2>
+<table class="table table-striped">
+<thead><tr><th>To Do...</th><th>You Say...</th><th>Details</th><th>Attributes</th></tr></thead>
+<tbody class="table-striped">
 <tr><td>Maximize a window, Minimize or Restore</td><td>"Maximize" / "Minimize" / "Restore"</td><td>"SMax" / "SMin" to maximize or minimize the window under mouse-pointer</td><td>Streamable<br>Moused</td></tr>
-<tr><td>Go Back or Go Forward (Web Browsers, File Explorer, VS Code... a la alt left/right)</td><td>"Go Back" / "Go Forward"</td><td>Multiplier: "3 Go Back" to go back three web pages / explorer folders / VS Code locations</td><td>Multiplier</td></tr>
-<tr><td>Resize window</td><td>"Resize"</td><td>After the mouse cursor changes, say direction, eg "up" or "right" or "resize 10 down enter"</td><td>Streamable</td></tr>
+<tr><td>Go Back or Go Forward (In Web Browsers, File Explorer, VS Code)</td><td>"Go Back" / "Go Forward"</td><td>Same as keyboard Alt+Left or Alt+Right. Multiplier: "3 Go Back" to go back 3 times.</td><td>Multiplier</td></tr>
+<tr><td>Resize window</td><td>"Resize"</td><td>After saying, you will notice the mouse cursor changes. You may use the mouse to drag, or change window size with speech by saying a direction, example: "Up" or "Right" or "10 Down" or "4 Left", followed by "Enter"</td><td>Streamable</td></tr>
 <tr><td>Open Start Menu</td><td>"Finder"</td><td>You can find any app/file/folder from this powerful search menu, by speaking its name once the Start Menu is open, or even in same breath as "Finder", eg "Finder Word" or "Finder 2024 expenses" (assuming you have a file with that name)</td><td></td></tr>
-<tr><td>Quick-Open a highly-used folder</td><td>"Open (folder name)"</td><td>Preset defaults: My Documents, Downloads, Macros, e.g. "Open My Documents".<br><br>Common Folders are configured by editing the file SpeechBird_Common_Folders.cfg, in your C:\Users\(USERNAME)\Documents\Speech Macros\ folder, which you can open with Word or Notepad.<br>After saving the file, you will need to restart speech recognition for changes to come into effect.</td><td>Stream Ender</td></tr>
-<tr><td>Focus on Taskbar</td><td>"Taskbar"</td><td>You can say a clickable taskbar item in same breath, eg: "Taskbar Word" or "Taskbar Clock" or "Taskbar Internet" or "Taskbar Show Hidden"</td><td></td></tr>
-<tr><td>Switch back to previous app/window</td><td>"Switchback"</td><td>"Double Switchback" to switch to previous-previous</td><td>Advanced<br>Streamable<br>Selecting<br>Multiplier<br>Ordinal<br>Moused</td></tr>
-<tr><td>Show all open windows</td><td>"Switch"</td><td>Choose a window with the mouse, or directions eg "1 down 2 right enter"</td><td>Streamable</td></tr>
-<tr><td>Quick-Switch to a highly-used app</td><td>"App Name" (no need to say "Switch To..." before app name)</td><td>e.g: "Word" or "Notepad" will just switch to that app if it is open.<br>You can also give apps any nickname you would like, e.g: "Browser" can be set to "Edge" or "Chrome" or "Netscape" if you so please.<br><br>Preset defaults: My Documents, Downloads, Macros, e.g. "Open My Documents".<br><br>Common Folders are configured by editing the file SpeechBird_Quick_Switch_Apps.cfg, in your C:\Users\(USERNAME)\Documents\Speech Macros\ folder, which you can open with Word or Notepad.<br>After saving the file, you will need to restart speech recognition for changes to come into effect.</td><td>Streamable</td></tr>
-<tr><td>If File Explorer is running, switch to it; if it has multiple windows show them for user to select; If no File Explorer windows open, start it.</td><td>"Explore"</td><td>NOTE: Requires File Explorer to be pinned to Taskbar</td><td></td></tr>
-<tr><td>Switch to MS Outlook e-mail from any window (even if current window's clickable items contain the word "inbox", even if outlook is currently viewing non-inbox folder, etc. But, if looking at non-inbox Outlook mail such as "Archive", click "Inbox".)</td><td>"inbox"</td><td>Since not all users use Outlook: To activate this feauter, rename and "Computer Control - Outlook.WSRMac.OFF" to "Computer Control - Outlook.WSRMac".</td><td>Advanced<br>Streamable<br>Selecting<br>Multiplier<br>Ordinal<br>Moused</td></tr>
-<tr><td>Change volume level</td><td>"Volume Up" / "Volume Down"</td><td>"Small Volume Up/Down" for smaller increments, "Big..." for bigger</td><td>Streamable<br>Small<br>Big</td></tr>
+<tr><td>Search for any Application, Document, Windows Setting or File</td><td>"Finder (item)"</td><td>Uses Windows Start Menu search</td><td></td></tr>
+<tr><td>Quick-Open a highly-used folder</td><td>"Open (folder name)"</td><td>Preset defaults: My Documents, Downloads, Macros, e.g. "Open My Documents".<br><br>Common Folders are configured by editing the file SpeechBird_Common_Folders.cfg, in your C:\Users\(USERNAME)\Documents\Speech Macros\ folder. You may edit this file with Word or Notepad.<br>After saving the file, you will need to restart speech recognition for the changes to come into effect.</td><td>Stream Ender</td></tr>
+<tr><td>Focus on Taskbar, so you can then click on taskbar items by saying their name, Example: "Taskbar"... "Clock"</td><td>"Taskbar"</td><td>You can say a clickable taskbar item in the same breath, eg: "Taskbar Word" or "Taskbar Clock" or "Taskbar Internet" or "Taskbar Show Hidden"</td><td></td></tr>
+<tr><td>Switch back to previous window</td><td>"Switchback"</td><td>"Double Switchback" to switch to the previous-previous window</td><td>Advanced<br>Streamable<br>Selecting<br>Multiplier<br>Ordinal<br>Moused</td></tr>
+<tr><td>Show all open windows</td><td>"Switch"</td><td>Once the app swticher opens, choose a window to switch-to with a mouse click ("Yep"), or arrow directions, Example: "1 down 2 right enter"</td><td>Streamable</td></tr>
+<tr><td>Quick-Switch to a highly-used app</td><td>"App Name" (Or use WSR's longer way, "Switch To (App Name)"</td><td>"Word" or "Notepad" will just switch to that app if it is open.<br>You can give apps any nickname you would like, e.g: "Browser" can be set to "Edge" or "Chrome" ...or "Netscape" if you so please.<br><br>Change preset apps in the SpeechBird_Quick_Switch_Apps.cfg file.<br>Defaults include "Edge", "Word", "Excel" and more.<br>After saving the file, you will need to restart speech recognition for changes to come into effect.</td><td>Streamable</td></tr>
+<tr><td>Switch to File Explorer</td><td>"Explore"</td><td>NOTE: Requires File Explorer to be pinned to Taskbar.<br><br>If one window of File Explorer is open: Switch to it.<br>If several FE windows are open: Show those windows so the user may select with one to switch-to<br>If no File Explorer window open: open one.</td><td></td></tr>
+<tr><td>Switch to MS Outlook e-mail from any window (even if current window's clickable items contain the word "inbox", even if outlook is currently viewing non-inbox folder, etc. But, if looking at non-inbox Outlook mail such as "Archive", click "Inbox".)</td><td>"Inbox"</td><td>Off by default, since not all users use Outlook.<br>To activate: rename and "Computer Control - Outlook.WSRMac.OFF" to "Computer Control - Outlook.WSRMac".</td><td>Advanced<br>Streamable<br>Selecting<br>Multiplier<br>Ordinal<br>Moused</td></tr>
+<tr><td>Change volume level</td><td>"Volume Up" / "Volume Down"</td><td>"Small Volume Up/Down" for smaller increments, or "Big Volume Up/Down" for bigger increments</td><td>Streamable<br>Small<br>Big</td></tr>
 <tr><td>Play / Pause song or video</td><td>"Play Pause"</td><td></td><td>Streamable</td></tr>
-<tr><td>Play next / previous song or video</td><td>"Play Next" / "Play Previous"</td><td></td><td>Streamable</td></tr>
-<tr><td>Create a new file</td><td>"File New"</td><td></td><td></td></tr>
-<tr><td>Open a file</td><td>"File Open"</td><td></td><td></td></tr>
-<tr><td>Save</td><td>"File Save" OR: "Save"</td><td></td><td></td></tr>
+<tr><td>Play Next / Previous song or video</td><td>"Play Next" / "Play Previous"</td><td></td><td>Streamable</td></tr>
+<tr><td>Save</td><td>"File Save" OR: "Save"</td><td>Works with apps that support Ctrl+S shortcut</td><td></td></tr>
+<tr><td>Create a new file</td><td>"File New"</td><td>Works with apps that support Ctrl+N shortcut</td><td></td></tr>
+<tr><td>Open a file</td><td>"File Open"</td><td>Works with apps that support Ctrl+O shortcut</td><td></td></tr>
 <tr><td>Save As...</td><td>"Save As"</td><td></td><td></td></tr>
-<tr><td>Print a file</td><td>"File Print"</td><td></td><td></td></tr>
-<tr><td>Save and close</td><td>"Save and Close"</td><td>To save and close the window the mouse is pointing at, say "Stash"</td><td>Moused</td></tr>
+<tr><td>Print a file</td><td>"File Print"</td><td>Works with apps that support Ctrl+P shortcut</td><td></td></tr>
+<tr><td>Save and close</td><td>"Save and Close"</td><td>You may choose to close any app, even if it is not currently focused, by pointing at it with the mouse and saying "Stash"</td><td>Moused</td></tr>
 <tr><td>Close window (a la Alt + F4)</td><td>"Close"</td><td>To close the window under mouse pointer, say "Sklow"</td><td>Moused</td></tr>
-<tr><td>Close tab or window (a la Ctrl + w)</td><td>"Close Window" / "Close Tab"</td><td>To close the window/tab under mouse pointer, say "STab"</td><td>Moused</td></tr>
-<tr><td>Press Alt-n</td><td>"Alton"</td><td>Usually, if a window has unsaved work and you close it, a popup will offer to save. "Enter" usually saves; "Alton" is a quick way to NOT save, and proceed to close.</td><td></td></tr>
-<tr><td>Open new tab (in apps that support tabs)</td><td>"New Tab"</td><td></td><td></td></tr>
-<tr><td>Switch to next tab, previous tab or Nth tab</td><td>"Nextab" / "Previous Tab" / "Nth Tab" eg: "3rd Tab"</td><td></td><td>Moused</td></tr>
-<tr><td>Go Back or Go Forward (Web Browsers, File Explorer, VS Code... a la alt left/right)</td><td>"Go Back" / "Go Forward"</td><td></td><td></td></tr>
-<tr><td>Refresh Website</td><td>"Refresh"</td><td></td><td></td></tr>
-<tr><td>Make selected text bigger/smaller (OR: current word, if no selection)</td><td>"Bigger Font" / "Smaller Font"</td><td>Multiplier, Eg: "3 Bigger Font" to enlarge 3 times</td><td>Streamable<br>Mulitplier</td></tr>
+<tr><td>Close tab or window (a la Ctrl + W)</td><td>"Close Window" / "Close Tab"</td><td>To close the window/tab under mouse pointer, say "STab"</td><td>Moused</td></tr>
+<tr><td>Press Alt-N (click "No" when presented with a "Yes" and "No" prompt)</td><td>For example, if you close a window with unsaved work, and are promted to Save (Yes/No).<br>Hint: Usually, "Enter" will choose "Yes" to save, and "No" (Say: "Alton") will NOT save, just close.</td><td></td><td></td></tr>
+<tr><td>Open new tab (in apps that support tabs and Ctrl + T)</td><td>"New Tab"</td><td></td><td></td></tr>
+<tr><td>Switch to next tab, previous tab or Nth tab</td><td>"Nextab" / "Previous Tab" / "Nth Tab" eg: "3rd Tab"</td><td></td><td></td></tr>
+<tr><td>Refresh (Website or File Explorer window)</td><td>"Refresh"</td><td></td><td></td></tr>
+<tr><td>Make selected text bigger/smaller (OR: current word, if no selection)</td><td>"Bigger Font" / "Smaller Font"</td><td>NOTE: These next few commands work only in certain appes, such as MS Word and several other office apps. Multiplier, Eg: "3 Bigger Font" to enlarge 3 times</td><td>Streamable<br>Mulitplier</td></tr>
 <tr><td>Highlight selected text (OR: current word, if no selection)</td><td>"Highlight" / "UnHighlight"</td><td>Multiplier, Eg: "2 HighlightS" to highlight the last 2 words</td><td>Streamable<br>Multiplier</td></tr>
 <tr><td>Align selected lines to the left/right/center/justify (If no lines selected, current line only)</td><td>"Align Left" OR: "Align Right" OR: "Align Center" OR: "Justify"</td><td></td><td>Streamable</td></tr>
-<tr><td>Move a line or several selected lines of text up/down/left/right</td><td>"Move Up/Down/Left/Right"</td><td>Add "S" in the beginning to move the line under mouse pointer, eg "SMove Right"</td><td>Streamable<br>Multiplier<br>Moused</td></tr>
+<tr><td>Move a line (or several selected lines) of text up/down/left/right</td><td>"Move Up/Down/Left/Right"</td><td>Add "S" in the beginning to move the line under mouse pointer, eg "SMove Right"</td><td>Streamable<br>Multiplier<br>Moused</td></tr>
 <tr><td>Paste as Text</td><td>"Paste Text"</td><td></td><td>Streamable</td></tr>
 <tr><td>Paste and change format to merge with the destination document</td><td>"Paste Merge"</td><td></td><td>Streamable</td></tr>
 <tr><td>Export file as PDF</td><td>"File Export"</td><td></td><td>Streamable</td></tr>
@@ -144,7 +150,7 @@
 <tr><td>Open a mini search window, prefilled with "synonym" for you to edit your word / phrase to. Any selected text will be copied to clipboard.</td><td>"Synonym"</td><td>When the windows comes up, you can speak your search word / phrase, or say "Paste" to paste what you selected before opening the Websearch window.</td><td></td></tr>
 <tr><td>Search online for the definition of a word or phrase</td><td>"Synonym [word or phrase]"</td><td>Eg "Synonym eternity"</td><td></td></tr>
 <tr><td>Find synonyms for selected text</td><td>"Synonym That"</td><td>Eg "Afters Synonym That" or select first, then say "Synonym That"</td><td></td></tr>
-<tr><td>Various MS Outlook commands are available</td><td>"inbox"</td><td>Since not all users use Outlook: To activate these features, rename and "Computer Control - Outlook.WSRMac.OFF" to "Computer Control - Outlook.WSRMac".</td><td>Advanced<br>Streamable<br>Selecting<br>Multiplier<br>Ordinal<br>Moused</td></tr>
+<tr><td>Various MS Outlook commands are available</td><td>"Inbox"</td><td>Since not all users use Outlook: To activate these features, rename and "Computer Control - Outlook.WSRMac.OFF" to "Computer Control - Outlook.WSRMac".</td><td>Advanced<br>Streamable<br>Selecting<br>Multiplier<br>Ordinal<br>Moused</td></tr>
 </tbody></table>
 <h2 id="Advanced:_Typing_Enhancements_">Advanced: Typing Enhancements </h2>
 <table class="table table-striped">
